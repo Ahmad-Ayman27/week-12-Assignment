@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    
+  <nav class="navbar navbar-expand py-5 ">
+    <div class="container w-75">
+      <a class="navbar-brand  d-flex align-items-center" href="#">
+        <img src="images12/images121.png" class="me-2" alt="cloud">
+        <div class="tagline w-50">
+          <p class=" text-white m-0 p-0 d-flex flex-column">
+            Weather
+            <span class=>
+              tagline goes here
+            </span>
+          </p>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a  class="nav-link active mx-4" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  mx-4" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  mx-4" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  mx-4" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a id="Contact" class="nav-link  mx-4" href="#" id="Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container-fluid p-0">
+      <div class="weather-info pt-4 position-relative w-100">
+        <div class="input ">
+          <div class="input__container  m-auto pt-3 w-75 ">
+            <button id="mainButton" class="input__button__shadow text-white bg-black form-control">
+              Search
+              <i class="fa-solid fa-magnifying-glass fs-5 ms-1 text-info"></i>
+            </button>
+            <input id="locationInput" type="text" name="location" class="input__search text-dark is-invalid form-control" placeholder="Enter Location" />
+            <button id="secondaryButton">
+              <i class="icon fa-solid fa-earth-americas fs-3 text-info"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row g-0" id="weatherInfo">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-md-6 offset-1 pb-3">
+          <div class="input_change me-auto pt-3 w-100 ">
+            <button class="input__button__shadow text-white bg-black">
+              <i class="fa-solid fa-magnifying-glass fs-3 text-info"></i>
+            </button>
+            <input type="text" name="Enter ur Email to subscribe" class=" input__search text-dark form-control"
+              placeholder="Enter ur Email to subscribe....." />
+          </div>
+
+          <div class="copyright">
+            <p class="text-white pt-3">
+              Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="footer-icons ms-3">
+            <a href="" class="me-1">
+              <i class="fa-brands ico fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-1">
+              <i class="fa-brands ico fa-twitter"></i>
+            </a>
+            <a href="" class="me-1">
+              <i class="fa-brands ico fa-google-plus-g"></i>
+            </a>
+            <a href="" class="me-1"> <i class="fa-brands ico fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+
 </body>
+
 </html>
